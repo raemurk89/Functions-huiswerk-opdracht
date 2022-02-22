@@ -18,16 +18,6 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 
 
-let amountOfCumLaude = 0;
-
-    for (let i = 0; i < grades.length; i++) {
-        if (grades[i] >= 8) {
-            amountOfCumLaude++;
-        }
-    }
-
-console.log(amountOfCumLaude)
-
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
@@ -45,21 +35,7 @@ console.log(amountOfCumLaude)
 //     return
 // }
 
-const numbers = [9, 6, 4, 9, 0, 2, 7];
 
-function getCumLaudeAmountByArray(numbers){
-    let amount = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        if(numbers[i] >= 8){
-            amount++;
-        }
-
-    }
-
-    console.log(numbers);
-
-
-}
 
 
 
@@ -82,17 +58,7 @@ function getCumLaudeAmountByArray(numbers){
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
-const grades2 = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-let totalAverage = 0;
-
-for (let i = 0; i < grades2.length; i++) {
-    totalAverage = totalAverage + grades2[i];
-}
-
-averageGrade2 = totalAverage / grades2.length;
-
-console.log(averageGrade2);
 
 
 
@@ -106,27 +72,14 @@ console.log(averageGrade2);
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
 
-const grades3 = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-let totalAverage1 = 0;
-
-function reUsable() {
-    for (let i = 0; i < arguments.length; i++) {
-        totalAverage1 = totalAverage1 + arguments[i];
-    }
-    return totalAverage1 / arguments.length;
-}
-
-const poo = reUsable(8, 9, 4, 6, 10);
-
-console.log(poo);
 
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-console.log(averageGrade2.toFixed(2));
+
 
 /* Bonusopdracht: hoogste cijfer */
 
@@ -139,17 +92,7 @@ console.log(averageGrade2.toFixed(2));
 
 // ---- Verwachte uitkomst: 9
 
-const gradesBonus = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-let highestGrade = 0;
-
-for (let i = 0; i < gradesBonus.length; i++) {
-    if (gradesBonus[i] > highestGrade) {
-        highestGrade = gradesBonus[i];
-    }
-}
-
-console.log(highestGrade)
 
 /* 3b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
